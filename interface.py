@@ -1,8 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-import pymsgbox
-import pathlib
-import os
 
 lista_contatos_errados={}
 lista_contatos_real={}
