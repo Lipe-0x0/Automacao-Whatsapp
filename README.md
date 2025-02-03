@@ -32,7 +32,7 @@ Este botão com símbolo de positivo é adquirido a partir da extensão [WA WEB 
 <br><br/>
 ![botao documento adicionar](https://github.com/user-attachments/assets/e7d66c60-0a5e-473d-9a58-2b6470abbcd9)
 <br>
-
+***
 ## Wa Web Plus
 A única finalidade desta extensão se deve por conta da opção de adicionar contatos não salvos no seu dispositivo/aparelho celular:
 <br><br/>
