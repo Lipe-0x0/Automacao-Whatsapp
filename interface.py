@@ -16,7 +16,7 @@ def sob_msg():
     sob=Tk()
     sob.configure(bd=4,highlightbackground="#86b8b1",highlightthickness=3,background="#15212a")
     sob.geometry("500x350+570+250")
-    sob.iconbitmap("whatsapp.ico")
+    sob.iconbitmap("imagens/imagens/whatsapp.ico")
     sob.title("Automação Whatsapp")
 
     inf_nome=Label(sob,text="Nome:",fg="#009003",font=("arial",12,"bold"),)
@@ -32,7 +32,7 @@ def sob_msg():
 def sob_arq():
     sob=Tk()
     sob.geometry("500x350+570+250")
-    sob.iconbitmap("whatsapp.ico")
+    sob.iconbitmap("imagens/imagens/whatsapp.ico")
     sob.title("Automação Whatsapp")
     sob.mainloop()
 
@@ -43,7 +43,7 @@ def frase():
     fra.configure(background="White")
     fra.attributes("-alpha",1)
     fra.geometry("500x130+680+300")
-    fra.iconbitmap("whatsapp.ico")
+    fra.iconbitmap("imagens/imagens/whatsapp.ico")
     fra.title("Automação Whatsapp")
 
     label_fra=Label(fra,text="Insira a mensagem",anchor="center",font=("arial",12))
@@ -75,7 +75,7 @@ def frase():
             pyautogui.hotkey("enter")
             pyautogui.useImageNotFoundException()
             try: 
-                botao_erro_location = pyautogui.locateOnScreen("botao erro zapp.png")
+                botao_erro_location = pyautogui.locateOnScreen("imagens/imagens/botao erro zapp.png")
             except pyautogui.ImageNotFoundException:
                 botao_erro_location=None
             if botao_erro_location!=None:
@@ -101,7 +101,7 @@ def sim_nao():
     s_n.configure(background="White")
     s_n.attributes("-alpha",1)
     s_n.geometry("300x150+680+300")
-    s_n.iconbitmap("whatsapp.ico")
+    s_n.iconbitmap("imagens/imagens/whatsapp.ico")
     s_n.title("Automação Whatsapp")
 
     # FUNÇÃO "SIM"
@@ -131,7 +131,7 @@ def pergunta():
     perg.configure(background="White")
     perg.attributes("-alpha",1)
     perg.geometry("300x150+680+300")
-    perg.iconbitmap("whatsapp.ico")
+    perg.iconbitmap("imagens/imagens/whatsapp.ico")
     perg.title("Automação Whatsapp")
 
     label_perg=Label(perg,text="Quantos Contatos quer adicionar?",anchor="center")
@@ -157,7 +157,7 @@ def mensagem():
     tela_msg=Tk()
     tela_msg.configure(background="#31a842")
     tela_msg.geometry("800x500+400+200")
-    tela_msg.iconbitmap("whatsapp.ico")
+    tela_msg.iconbitmap("imagens/imagens/whatsapp.ico")
     tela_msg.title("Automação Whatsapp")
 
     # CRIANDO FRAME P/ ENVIAR MENSAGEM
@@ -227,7 +227,7 @@ def diretorio():
     tela_dic.configure(background="White")
     tela_dic.attributes("-alpha",1)
     tela_dic.geometry("500x130+680+300")
-    tela_dic.iconbitmap("whatsapp.ico")
+    tela_dic.iconbitmap("imagens/imagens/whatsapp.ico")
     tela_dic.title("Automação Whatsapp")
 
     label_dic=Label(tela_dic,text="Insira o caminho do arquivo",anchor="center",font=("arial",12))
@@ -272,7 +272,7 @@ def diretorio():
             pyautogui.hotkey("enter")
             pyautogui.useImageNotFoundException()
             try: 
-                botao_erro_location = pyautogui.locateOnScreen("botao erro zapp.png")
+                botao_erro_location = pyautogui.locateOnScreen("imagens/imagens/botao erro zapp.png")
             except pyautogui.ImageNotFoundException:
                 botao_erro_location=None
             if botao_erro_location!=None:
@@ -281,9 +281,9 @@ def diretorio():
                 print(lista_contatos_errados)
                 pass
             else:
-                botao_adi_location=pyautogui.locateOnScreen("botao documento adicionar.png")
+                botao_adi_location=pyautogui.locateOnScreen("imagens/imagens/botao documento adicionar.png")
                 pyautogui.click(botao_adi_location[0],botao_adi_location[1])
-                botao_doc_location=pyautogui.locateOnScreen("botao documento zapp.png")
+                botao_doc_location=pyautogui.locateOnScreen("imagens/imagens/botao documento zapp.png")
                 pyautogui.click(botao_doc_location[0],botao_doc_location[1])
                 pyautogui.click(x=203, y=65)
                 pyperclip.copy(caminho)
@@ -309,7 +309,7 @@ tela.configure(background="#31a842")
 tela.title("Automação Whatsapp")
 tela.geometry("800x500+400+200")
 tela.attributes("-alpha",1)
-tela.iconbitmap("whatsapp.ico")
+tela.iconbitmap("imagens/imagens/whatsapp.ico")
 
 # CRIANDO FRAMES NA TELA PRINCIPAL
 frame=Frame(tela,bd=4,highlightbackground="#86b8b1",highlightthickness=3,background="#15212a")
