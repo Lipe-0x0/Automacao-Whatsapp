@@ -28,8 +28,18 @@ As imagens abaixo foram utilizadas para identificação de botões na interface 
 ![botao erro zapp](https://github.com/user-attachments/assets/bee6aef1-baf9-4794-afef-b427c775735c)
 ![botao documento zapp](https://github.com/user-attachments/assets/4e903bde-3acd-4376-969c-a06879d54947)
 <br><br/>
-Este botão com símbolo de positivo é adquirido a partir da extensão [WA WEB Plus](https://wawplus.com/) e serve para adicionar contatos que não estam salvos no seu aparelho celular
+Este botão com símbolo de positivo é adquirido a partir da extensão [WA WEB Plus](https://wawplus.com/) e serve para adicionar contatos que não estão salvos no seu aparelho celular
 <br><br/>
 ![botao documento adicionar](https://github.com/user-attachments/assets/e7d66c60-0a5e-473d-9a58-2b6470abbcd9)
 <br>
+***
+## Wa Web Plus
+A única finalidade desta extensão se deve por conta da opção de adicionar contatos não salvos no seu dispositivo/aparelho celular:
+<br><br/>
+![Uso da wa web plus](https://github.com/user-attachments/assets/25d78351-4759-4363-90a5-238419a0d5ae)
+<br><br/>
+Ao clicar no ícone aparecerá esta tela de contato e assim que adicioná-lo você será direcionado para a conversa:
+<br><br/>
+![Captura de tela 2025-02-02 221301](https://github.com/user-attachments/assets/23c69c6b-49cd-4e42-b920-6d632000dcc8)
+
 
