@@ -16,8 +16,9 @@ def sob_msg():
     sob=Tk()
     sob.configure(bd=4,highlightbackground="#86b8b1",highlightthickness=3,background="#15212a")
     sob.geometry("500x350+570+250")
-    sob.iconbitmap("imagens/imagens/whatsapp.ico")
+    sob.iconbitmap("imagens/whatsapp.ico")
     sob.title("Automação Whatsapp")
+    sob.resizable(False,False)
 
     inf_nome=Label(sob,text="Nome:",fg="#009003",font=("arial",12,"bold"),)
     inf_nome.place(relx=0.15,rely=0.2)
@@ -32,8 +33,9 @@ def sob_msg():
 def sob_arq():
     sob=Tk()
     sob.geometry("500x350+570+250")
-    sob.iconbitmap("imagens/imagens/whatsapp.ico")
+    sob.iconbitmap("imagens/whatsapp.ico")
     sob.title("Automação Whatsapp")
+    sob.resizable(False,False)
     sob.mainloop()
 
 #---------------------------------CAIXA P/ PÔR A MENSAGEM E FINALIZAR---------------------------------
@@ -43,8 +45,9 @@ def frase():
     fra.configure(background="White")
     fra.attributes("-alpha",1)
     fra.geometry("500x130+680+300")
-    fra.iconbitmap("imagens/imagens/whatsapp.ico")
+    fra.iconbitmap("imagens/whatsapp.ico")
     fra.title("Automação Whatsapp")
+    fra.resizable(False,False)
 
     label_fra=Label(fra,text="Insira a mensagem",anchor="center",font=("arial",12))
     label_fra.place(relx=0.35,rely=0.1,relheight=0.15)
@@ -75,7 +78,7 @@ def frase():
             pyautogui.hotkey("enter")
             pyautogui.useImageNotFoundException()
             try: 
-                botao_erro_location = pyautogui.locateOnScreen("imagens/imagens/botao erro zapp.png")
+                botao_erro_location = pyautogui.locateOnScreen("imagens/botao erro zapp.png")
             except pyautogui.ImageNotFoundException:
                 botao_erro_location=None
             if botao_erro_location!=None:
@@ -101,8 +104,9 @@ def sim_nao():
     s_n.configure(background="White")
     s_n.attributes("-alpha",1)
     s_n.geometry("300x150+680+300")
-    s_n.iconbitmap("imagens/imagens/whatsapp.ico")
+    s_n.iconbitmap("imagens/whatsapp.ico")
     s_n.title("Automação Whatsapp")
+    s_n.resizable(False,False)
 
     # FUNÇÃO "SIM"
     def si():
@@ -131,8 +135,9 @@ def pergunta():
     perg.configure(background="White")
     perg.attributes("-alpha",1)
     perg.geometry("300x150+680+300")
-    perg.iconbitmap("imagens/imagens/whatsapp.ico")
+    perg.iconbitmap("imagens/whatsapp.ico")
     perg.title("Automação Whatsapp")
+    perg.resizable(False,False)
 
     label_perg=Label(perg,text="Quantos Contatos quer adicionar?",anchor="center")
     label_perg.place(relx=0.2,rely=0.1,relheight=0.1)
@@ -157,8 +162,9 @@ def mensagem():
     tela_msg=Tk()
     tela_msg.configure(background="#31a842")
     tela_msg.geometry("800x500+400+200")
-    tela_msg.iconbitmap("imagens/imagens/whatsapp.ico")
+    tela_msg.iconbitmap("imagens/whatsapp.ico")
     tela_msg.title("Automação Whatsapp")
+    tela_msg.resizable(False,False)
 
     # CRIANDO FRAME P/ ENVIAR MENSAGEM
     frame_env=Frame(tela_msg,bd=4,highlightbackground="#86b8b1",highlightthickness=3)
@@ -195,7 +201,7 @@ def mensagem():
             contato=lista_contatos.values()
             contato=list(contato)
             for i in range(len(lista_contatos)):
-                treeview.insert("",END,values=(count,nomes[i],contato[i]))
+                tabela.insert("",END,values=(count,nomes[i],contato[i]))
             entry_perg-=1
             tela_msg.destroy()
             if entry_perg!=0:
@@ -227,8 +233,9 @@ def diretorio():
     tela_dic.configure(background="White")
     tela_dic.attributes("-alpha",1)
     tela_dic.geometry("500x130+680+300")
-    tela_dic.iconbitmap("imagens/imagens/whatsapp.ico")
+    tela_dic.iconbitmap("imagens/whatsapp.ico")
     tela_dic.title("Automação Whatsapp")
+    tela_dic.resizable(False,False)
 
     label_dic=Label(tela_dic,text="Insira o caminho do arquivo",anchor="center",font=("arial",12))
     label_dic.place(relx=0.3,rely=0.1,relheight=0.15)
@@ -272,7 +279,7 @@ def diretorio():
             pyautogui.hotkey("enter")
             pyautogui.useImageNotFoundException()
             try: 
-                botao_erro_location = pyautogui.locateOnScreen("imagens/imagens/botao erro zapp.png")
+                botao_erro_location = pyautogui.locateOnScreen("imagens/botao erro zapp.png")
             except pyautogui.ImageNotFoundException:
                 botao_erro_location=None
             if botao_erro_location!=None:
@@ -281,9 +288,9 @@ def diretorio():
                 print(lista_contatos_errados)
                 pass
             else:
-                botao_adi_location=pyautogui.locateOnScreen("imagens/imagens/botao documento adicionar.png")
+                botao_adi_location=pyautogui.locateOnScreen("imagens/botao documento adicionar.png")
                 pyautogui.click(botao_adi_location[0],botao_adi_location[1])
-                botao_doc_location=pyautogui.locateOnScreen("imagens/imagens/botao documento zapp.png")
+                botao_doc_location=pyautogui.locateOnScreen("imagens/botao documento zapp.png")
                 pyautogui.click(botao_doc_location[0],botao_doc_location[1])
                 pyautogui.click(x=203, y=65)
                 pyperclip.copy(caminho)
@@ -309,7 +316,8 @@ tela.configure(background="#31a842")
 tela.title("Automação Whatsapp")
 tela.geometry("800x500+400+200")
 tela.attributes("-alpha",1)
-tela.iconbitmap("imagens/imagens/whatsapp.ico")
+tela.iconbitmap("imagens/whatsapp.ico")
+tela.resizable(False,False)
 
 # CRIANDO FRAMES NA TELA PRINCIPAL
 frame=Frame(tela,bd=4,highlightbackground="#86b8b1",highlightthickness=3,background="#15212a")
@@ -341,23 +349,23 @@ arq=Button(frame_arq,text="Enviar",command=diretorio,bd=3,bg="#31a842",font=("ve
 arq.place(relx=0.42,rely=0.2,relwidth=0.15)
 arq_cont=Button(frame_arq,text="Inserir Contatos",command=sim_nao,bd=3,bg="#31a842",font=("verdana",8,"bold"))
 arq_cont.place(relx=0.32,rely=0.4,relwidth=0.35)
-# CRIANDO TREEVIEW NA TELA PRINCIPAL (FRAME 2)
-treeview=ttk.Treeview(frame2,columns=("col1","col2","col3"))
-treeview.heading("#0",text="")
-treeview.heading("#1",text="ID")
-treeview.heading("#2",text="Nome")
-treeview.heading("#3",text="Contato")
+# CRIANDO lista NA TELA PRINCIPAL (FRAME 2)
+tabela=ttk.Treeview(frame2,columns=("col1","col2","col3"))
+tabela.heading("#0",text="")
+tabela.heading("#1",text="ID")
+tabela.heading("#2",text="Nome")
+tabela.heading("#3",text="Contato")
 
-treeview.column("#0",width=1)
-treeview.column("#1",width=1)
-treeview.column("#2",width=200)
-treeview.column("#3",width=100)
+tabela.column("#0",width=0)
+tabela.column("#1",width=0)
+tabela.column("#2",width=125)
+tabela.column("#3",width=125)
 
 
-treeview.place(relx=0.002,rely=0.01,relheight=0.98,relwidth=0.958)
+tabela.place(relx=0.002,rely=0.01,relheight=0.98,relwidth=0.958)
 
 scroll=Scrollbar(frame2,orient="vertical")
-treeview.configure(yscroll=scroll)
+tabela.configure(yscroll=scroll)
 scroll.place(relx=0.96,rely=0.01,relheight=0.98,relwidth=0.043)
 
 tela.mainloop()
